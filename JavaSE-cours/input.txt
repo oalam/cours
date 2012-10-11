@@ -1,0 +1,8 @@
+String ligne ;
+BufferedReader fichier = new BufferedReader(new FileReader("input.txt"));
+
+while ((ligne = fichier.readLine()) != null) {
+    System.out.println(ligne);
+}
+
+fichier.close();
