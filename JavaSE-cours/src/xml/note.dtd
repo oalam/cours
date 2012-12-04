@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT note (to,from,heading,(message|body))>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
+
+
+
+<!ATTLIST note id CDATA #REQUIRED>
+
+<!ENTITY writer "Donald Duck.">

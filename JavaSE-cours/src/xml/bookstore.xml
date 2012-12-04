@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/workspace/formation-java/JavaSE-cours/src/xml/bookstore.xsd">
+	<book>
+		<isbn/>
+		<title/>
+		<page_count/>
+		<author id="2">
+			<name/>
+		</author>
+	</book>
+	<book>
+		<isbn></isbn>
+		<title></title>
+		<page_count></page_count>
+		<author>
+			<name></name>
+		</author>
+	</book>
+</bookstore>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/workspace/formation-java/JavaSE-cours/src/xml/haricot.xsd" uri="xml-resources/jaxb/haricot/haricot.xsd"/>
+</catalog>
