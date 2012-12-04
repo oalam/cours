@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videostore 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="videostore.xsd" >
+
+    
+    <film id="aze-0132">
+        <title>Le nom de la rose</title>
+        <actor></actor>
+    </film>    
+    <film id="aze-0142" rt="">
+        <title>E.T.</title>
+         <actor></actor>
+    </film>   
+
+    
+</videostore>

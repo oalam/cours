@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE SAX-bindings PUBLIC "-//XML Module//DTD SAX Bindings 1.0//EN" "">
+<SAX-bindings version='1'>
+	<bind element='author' method='author' type='DATA' ></bind>
+	<bind element='editor' method='editor' type='DATA' ></bind>
+	<bind element='title' method='title' type='DATA' ></bind>
+	<bind element='userComment' method='userComment' type='DATA' ></bind>
+	<bind element='price' method='price' type='DATA' ></bind>
+	<bind element='bookstore' method='bookstore' type='CONTAINER' ></bind>
+	<bind element='book' method='book' type='CONTAINER' ></bind>
+	<bind element='year' method='year' type='DATA' ></bind>
+	<bind element='comments' method='comments' type='CONTAINER' ></bind>
+</SAX-bindings>

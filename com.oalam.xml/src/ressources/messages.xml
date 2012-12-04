@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+<!DOCTYPE messages SYSTEM "messages.dtd">
+
+-->
+<messages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="messages.xsd">
+
+    <note id="501"  lang="l">
+         <from>Jani</from>
+        <to>Tove</to>
+       
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+
+    </note>
+    <note id="502">
+        <to>Jani</to>
+        <from>Tove</from>
+        <heading>Re: Reminder</heading>
+        <body>I will not</body>
+    </note>
+
+</messages>

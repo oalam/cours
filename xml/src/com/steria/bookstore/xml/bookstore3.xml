@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bookstore>
+    <book>
+        <title>title1</title>
+        <author>Auteur1</author>
+        <editor>Editeur1</editor>
+    </book>
+    <book>
+        <title>title2</title>
+        <author>Auteur2</author>
+        <editor>Editeur2</editor>
+    </book>
+    <book>
+        <title>title3</title>
+        <author>Auteur3</author>
+        <editor>Editeur3</editor>
+    </book>
+</bookstore>

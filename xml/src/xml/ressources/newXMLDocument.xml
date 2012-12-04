@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument.xml
+    Created on : 10 novembre 2011, 10:41
+    Author     : formation
+    Description:
+        Purpose of the document follows.
+-->
+
+<!DOCTYPE NEWSPAPER SYSTEM 'newspaper.dtd'>
+<NEWSPAPER>
+
+</NEWSPAPER>

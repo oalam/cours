@@ -1,0 +1,13 @@
+/* Cascade style sheet based on books.dtd DTD */
+bookstore { background-color: #ffffff;
+width: 100%;}
+book { display: block;
+margin-bottom: 30pt;
+margin-left: 0; }
+title { color: #FF0000;
+font-size: 20pt; }
+author { color: #0000FF;
+font-size: 20pt;}
+year,price,comments,userComment { display: block;
+color: #000000;
+margin-left: 20pt;}

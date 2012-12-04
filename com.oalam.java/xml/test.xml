@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!-- comment -->
+    
+<stagiaires>
+    <stagiaire id="1" nom="hugny" prenom="didier"/>
+    <stagiaire id="3" nom="hugny" prenom="didier"/>
+    <stagiaire id="2">
+            
+        <nom>Hugny</nom>
+        <prenom>didier</prenom>
+    </stagiaire>
+         
+</stagiaires>
+     

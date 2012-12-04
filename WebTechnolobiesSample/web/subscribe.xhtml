@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Topfullveb subscribe</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <script type="text/javascript">
+            <![CDATA[
+                function validate(){
+                var x=document.forms["myForm"]["email"].value;
+                var atpos=x.indexOf("@");
+                var dotpos=x.lastIndexOf(".");
+                var pwd=document.forms["myForm"]["pwd"].value;
+                var pwd2=document.forms["myForm"]["pwd2"].value;   
+                
+                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+                  {
+               
+                  
+                  document.getElementById("error").innerHTML = "Not a valid e-mail address";
+                  return false;
+                  }
+                
+                else {
+                    document.getElementById("error").innerHTML = "";
+                }
+                
+                
+                
+             
+                
+                if(pwd != pwd2){
+                    document.getElementById("error").innerHTML = "Paswword do not match";
+                  return false;
+                }
+                 else {
+                     document.getElementById("error").innerHTML = "";
+                     
+                 }
+                    
+                }
+                  
+         ]]>
+
+    
+        </script>
+    </head>
+    <body>
+
+     
+        <div id="container">
+            <div id="header">
+                <h1>
+                    Topfullveb subscribe
+                </h1>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div id="content">
+
+                <form name="myForm" method="GET" action="testParam" onsubmit="return validate();">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>param</th>
+                                <th>value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>email</td>
+                                <td><input type="text" name="email" value="tom@steria.com" /></td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td><input type="text" name="name" value="b" /></td>
+                            </tr>
+                            <tr>
+                                <td>surname</td>
+                                <td><input type="text" name="name" value="tom" /></td>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td><input type="password" name="pwd" value="formation" /></td>
+                            </tr>
+                            <tr>
+                                <td>confirm password</td>
+                                <td><input type="password" name="pwd2" value="formation" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                       <div id="error" >
+        </div>
+
+                    <select name="combo">
+                        <option>opt1</option>
+                        <option>opt2</option>
+                    </select>
+
+                    <input type="radio" name="sex" value="male" /> Male<br />
+                    <input type="radio" name="sex" value="female" /> Female<br />
+
+
+                    <input type="checkbox" name="gender" value="ON" />
+
+                    <input type="submit" value="create account" />
+
+                    <input type="text" name="comment" value="" size="300" />
+
+                </form>
+
+
+            </div>
+            <div id="footer">
+                Copyright © Site name, 20XX
+
+
+            </div>
+        </div>
+    </body>
+</html>

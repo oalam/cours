@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Catalog
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='catalog.xsd'>
+    <category id="1">
+        <name>dairies</name>
+        <product id="1">
+            <name>milk</name>
+            <price>1.95</price>
+        </product>
+        <product id="2">
+            <name>cream</name>
+            <price>3.25</price>
+        </product>
+        <product id="3">
+            <name>lassi</name>
+            <price>4.05</price>
+        </product>
+    </category>
+    <category id="2">
+        <name>vegetables</name>
+        <product id="4">
+            <name>pomodoro</name>
+            <price>3.05</price>
+        </product>
+    </category>
+    <category id="3">
+        <name>meats</name>
+        <product id="5">
+            <name>beef</name>
+            <price>21.05</price>
+        </product>
+        <product id="6">
+            <name>steak</name>
+            <price>24.05</price>
+        </product>
+    </category>
+    <category id="4">
+        <name>bakery</name>
+        <product id="7">
+            <name>bread</name>
+            <price>1.05</price>
+        </product>
+    </category>
+</Catalog>

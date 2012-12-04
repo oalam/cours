@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Customer" type="Customer"/>
+	<xs:complexType name="Customer">
+		<xs:sequence>
+			<xs:element name="creditcard" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Order" type="Order"/>
+	<xs:complexType name="Order">
+		<xs:sequence>
+			<xs:element name="creationdate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="customer" type="Customer" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="status" type="ORDER_STATUS" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="orderedProducts" type="OrderedProduct" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ORDER_STATUS">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="pending"/>
+			<xs:enumeration value="canceled"/>
+			<xs:enumeration value="shipped"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="OrderedProduct" type="OrderedProduct"/>
+	<xs:complexType name="OrderedProduct">
+		<xs:sequence>
+			<xs:element name="productcount" type="xs:int" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

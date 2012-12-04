@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <description>Bibliothèque de test des taglibs</description>
+  <short-name>KeulkeulTagLib</short-name>
+  <tag>
+    <name>hellotag</name>
+    <tag-class>com.oalam.jsp.taglig.HelloTag</tag-class>
+    <description>Tag qui affiche bonjour</description>
+  </tag>
+  <tag>
+    <name>hellotagattributs</name>
+    <tag-class>com.oalam.jsp.taglig.HelloTagAttributs</tag-class>
+    <description>
+			Tag qui affiche bonjour et un attribut
+		</description>
+    <attribute>
+      <name>moment</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>explainworkingtag</name>
+    <tag-class>com.oalam.jsp.taglig.ExplainWorkingTag</tag-class>
+    <description>
+			Tag qui montre le fonctionnement interne de doStartTag et doEndTag
+		</description>
+    <attribute>
+      <name>test</name>
+      <required>true</required>
+    </attribute>
+    <attribute>
+      <name>apoca</name>
+      <required>true</required>
+    </attribute>
+  </tag>
+  <tag>
+    <name>evalexpressattribut</name>
+    <tag-class>com.oalam.jsp.taglig.JSPEvalExpressionAttribut</tag-class>
+    <description>
+			Tag qui permet de comprendre l'évaluation d'expression JSP
+		</description>
+    <attribute>
+      <name>value</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>hellotagarraylist</name>
+    <tag-class>com.oalam.jsp.taglig.HelloTagArrayList</tag-class>
+    <description>
+			Tag qui affiche l'intégralité d'une liste
+		</description>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>hellotagarraylistbis</name>
+    <tag-class>com.oalam.jsp.taglig.HelloTagArrayListBis</tag-class>
+    <description>
+			Tag qui affiche l'intégralité d'une liste (autre solution)
+		</description>
+    <attribute>
+      <name>bean</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>conditionelbody</name>
+    <tag-class>com.oalam.jsp.taglig.ConditionelTraitementBody</tag-class>
+    <description>
+			Tag qui affiche le corps si le paramètre existe
+		</description>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>switchtag</name>
+    <tag-class>com.oalam.jsp.taglig.SwitchTag</tag-class>
+    <description>Tag qui simule le Switch</description>
+    <attribute>
+      <name>test</name>
+      <required>true</required>
+    </attribute>
+  </tag>
+  <tag>
+    <name>casetag</name>
+    <tag-class>com.oalam.jsp.taglig.CaseTag</tag-class>
+    <description>Tag qui simule le Case</description>
+    <attribute>
+      <name>value</name>
+      <required>true</required>
+    </attribute>
+  </tag>
+  <tag>
+    <name>iteratetag</name>
+    <tag-class>com.oalam.jsp.taglig.IterateTag</tag-class>
+    <description>
+			Tag qui permet d'effectuer des Itérations sans manipulation	du contenu
+		</description>
+    <attribute>
+      <name>count</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>iteratetagbis</name>
+    <tag-class>com.oalam.jsp.taglig.IterateTagBis</tag-class>
+    <description>
+			Tag qui permet d'effectuer des Itérations avec manipulation	du contenu
+		</description>
+    <attribute>
+      <name>count</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>uppercasetag</name>
+    <tag-class>com.oalam.jsp.taglig.UpperCaseTag</tag-class>
+    <description>
+			Tag qui permet de mettre en majuscule le corps d'un Tag
+		</description>
+  </tag>
+  <tag>
+    <name>variablescript</name>
+    <tag-class>com.oalam.jsp.taglig.VariableScript</tag-class>
+    <teiclass>com.oalam.jsp.taglig.VariableScriptInfo</teiclass>
+    <description>
+			Tag qui montre la déclaration d'une variable de script
+		</description>
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>

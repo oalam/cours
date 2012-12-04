@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        test
+        <h:form>
+
+            <h:panelGrid columns="2">
+                <h:outputLabel value="age" for="id" />
+                <h:inputText id="age" value="#{testBean.age}" title="age" required="true" requiredMessage="should i guess ?"/>
+                <h:outputLabel value="name" for="name" />
+                <h:inputText id="name" value="#{testBean.name}" title="name" required="true" requiredMessage="please your name"/>
+            </h:panelGrid>
+            <h:commandLink action="#{testBean.goNext}" value="go next"/>
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE conf [
+<!ELEMENT conf (dao_type)>
+<!ELEMENT dao_type (#PCDATA)>
+<!ATTLIST dao_type key ID #REQUIRED>
+]>
+
+<conf>
+    <dao_type key="type">MOCK</dao_type>
+
+</conf>

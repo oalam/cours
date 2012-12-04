@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+	create a new prod
+	<f:view>
+	    <h:form>
+		<h1><h:outputText value="Create/Edit"/></h1>
+		<h:panelGrid columns="2">
+		    <h:outputLabel value="Name:" for="name" />
+		    <h:inputText id="name" value="#{productController.currentProduct.name}" title="Name" required="true" requiredMessage="The Name field is required."/>
+		    <h:outputLabel value="Price:" for="price" />
+		    <h:inputText id="price" value="#{productController.currentProduct.price}" title="Price" required="true" requiredMessage="The Price field is required."/>
+		    <h:outputLabel value="Description:" for="description" />
+		    <h:inputText id="description" value="#{productController.currentProduct.description}" title="Description" />
+		   
+		    <h:outputLabel value="Category:" for="categoryId" />
+		    <h:selectOneMenu id="categoryId" value="#{productController.currentProduct.categoryId}" title="CategoryId" required="true" requiredMessage="The CategoryId field is required.">
+			<!-- TODO: update below reference to list of available items-->
+			<f:selectItems var="category" 
+				       value="#{productController.itemsAvailableSelectOne}"
+				       itemValue="#{category}" 
+				       itemLabel="#{category.name}"/>
+			<!--<f:converter converterId="ProductBean.CategoryValueConverter"/>-->
+		
+		    </h:selectOneMenu>
+		</h:panelGrid>
+		<h:commandButton action="#{productController.doCreateProduct}" 
+				 value="create the product"
+				 styleClass="submit"/>
+	    </h:form>
+	</f:view>
+
+	
+    </h:body>
+</html>
+

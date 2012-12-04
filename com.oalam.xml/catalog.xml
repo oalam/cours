@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/HumanBooster/Dropbox/shared/com.oalam.xml/src/ressources/catalog.xsd" uri="xml-resources/jaxb/catalog/catalog.xsd"/>
+    <system systemId="file:/Users/tom/Dropbox/shared/com.oalam.xml/src/ressources/catalog.xsd" uri="xml-resources/jaxb/catalog/catalog.xsd"/>
+</catalog>

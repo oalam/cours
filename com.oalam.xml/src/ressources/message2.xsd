@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="Lang">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="fr"/>
+			<xs:enumeration value="en"/>
+			<xs:enumeration value="es"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Message" type="Message"/>
+	<xs:complexType name="Message">
+		<xs:sequence>
+			<xs:element name="notes" type="Note" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Note" type="Note"/>
+	<xs:complexType name="Note">
+		<xs:sequence>
+			<xs:element name="id" type="xs:long" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="from" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="to" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="heading" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="senddate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="body" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="lang" type="Lang" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

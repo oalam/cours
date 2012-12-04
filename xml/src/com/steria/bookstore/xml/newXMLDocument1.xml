@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument1.xml
+    Created on : June 26, 2012, 9:20 PM
+    Author     : tom
+    Description:
+        Purpose of the document follows.
+-->
+
+<ns1:bookstore  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xmlns:ns1='null'
+   xsi:schemaLocation='null file:/Users/tom/Documents/workspace/formation-cours/xml/src/xml/ressources/bookstore.xsd'>
+    <book category="">
+	<title lang=""></title>
+	<author></author>
+	<year></year>
+	<price></price>
+	<price2></price2>
+    </book>
+    <book category="">
+	<title lang=""></title>
+	<author></author>
+	<year></year>
+	<price></price>
+	<price2></price2>
+    </book>
+    <book category="">
+	<title lang=""></title>
+	<author></author>
+	<year></year>
+	<price></price>
+	<price2></price2>
+    </book>
+
+</ns1:bookstore>

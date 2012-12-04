@@ -1,0 +1,11 @@
+/* Cascade style sheet based on Note.dtd DTD */
+note { 
+    font-weight: bold;
+    font-size: x-large;
+    
+border-style: solid;
+border-width: thick;}
+to { background-color: greenyellow;}
+from { display: block }
+heading { display: block }
+body { display: block }

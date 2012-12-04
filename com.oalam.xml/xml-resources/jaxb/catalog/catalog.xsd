@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Category" type="Category"/>
+	<xs:complexType name="Category">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="product" type="Product" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="optional" type="xs:long"/>
+	</xs:complexType>
+	<xs:element name="Product" type="Product"/>
+	<xs:complexType name="Product">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="price" type="xs:float" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="id" use="optional" type="xs:long"/>
+	</xs:complexType>
+	<xs:element name="Catalog" type="Catalog"/>
+	<xs:complexType name="Catalog">
+		<xs:sequence>
+			<xs:element name="category" type="Category" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

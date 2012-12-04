@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/bookstore.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+    <bookstore>
+    ...
+    </bookstore>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bookstore (book)*>
+<!ATTLIST bookstore
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT book (comments|year|price|editor|author|title)*>
+<!ATTLIST book
+    cover CDATA #FIXED "hardcover"
+    category CDATA #REQUIRED
+    ISBN CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+    lang CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT author (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT editor (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT price (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT year (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT comments (userComment)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT userComment (#PCDATA)>
+<!ATTLIST userComment
+    rating CDATA #IMPLIED
+  >

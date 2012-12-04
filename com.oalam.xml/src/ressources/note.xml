@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="note.xsd"
+      lang="l"
+      
+      >
+
+   
+   <!--
+   <note
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com note.xsd">
+          -->
+    <to>Jani</to>
+    <from>Tove</from>
+    <heading>Re: Reminder</heading>
+    <body>I will not</body>
+    <date>1970-03-27</date>
+</note>
+    
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <script src="lib/sencha-touch.js" type="text/javascript"></script>
+        <link href="lib/sencha-touch.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+ 
+            new Ext.Application({
+                launch: function() {
+                    
+                    
+                    new Ext.Panel({
+                        
+                       
+                        
+                        fullscreen: true,
+                        dockedItems: [{xtype:'toolbar', title:'SudMettalic',
+                                items: [
+                                    {
+                                        text: 'Retour'
+                                    },
+                                    {
+                                        text: 'Accueil',
+                                        handler  : function(button, event)  {
+                                  
+                                            // console.log("clik"),
+                                            window.location = "index.html";
+                                        }
+                                    }
+                                    
+                                ]}],
+                        layout: {
+                            type : 'vbox',
+                            pack : 'center',
+                            align: 'stretch'
+                        },
+                        defaults: {
+                            layout: {
+                                type: 'hbox'
+                            },
+                            flex: 1,
+                            defaults: {
+                                xtype: 'button',
+                                cls  : 'demobtn',
+                                flex : 1
+                            }
+                        },
+                        styleHtmlContent: true,
+                        html: '<h2>Nous trouver</h2>'
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body></body>
+</html>

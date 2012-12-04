@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://java.sun.com/jsf/composite"  
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+	<cc:attribute name="item" required="true"/> 
+	<cc:attribute name="style" required="false"/>
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+
+	<h1><h:outputText value="Create/Edit"/></h1>
+	<h:panelGrid columns="2" style="#{compositeComponent.attrs.style}">
+	    <h:outputLabel value="Name:" for="name" />
+	    <h:outputLabel id="name" value="#{compositeComponent.attrs.item.name}" />
+	    <h:outputLabel value="Price:" for="price" />
+	    <h:outputLabel id="price" value="#{compositeComponent.attrs.item.price}" />
+	    <h:outputLabel value="Description:" for="description" />
+	    <h:outputLabel id="description" value="#{compositeComponent.attrs.item.description}"/>
+
+	    <h:outputLabel value="Category:" for="categoryId" />
+	    <h:outputLabel id="categoryId" value="#{compositeComponent.attrs.item.categoryId}"/>
+	</h:panelGrid>
+
+    </cc:implementation>
+</html>

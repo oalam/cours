@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Test.xml
+    Created on : 1 août 2011, 09:35
+    Author     : Administrateur
+    Description:
+        Purpose of the document follows.
+-->
+
+<bookstore version="1.0">
+    <book ISBN="1-123-123-1" >
+        <title>harry potter</title>
+        <author>J.K Rowling</author>
+        
+    </book>
+
+    <book ISBN="1-123-123-1">
+        <title>harry potter</title>
+        <author>J.K Rowling</author>
+    </book>
+</bookstore>

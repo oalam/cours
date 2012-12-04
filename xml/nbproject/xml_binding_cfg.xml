@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='xml' version='1.0'>
+	<schema type='-xmlschema' package='jaxb' name='booksore'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/booksore/bookstore.xsd' origLocation='src/com/steria/bookstore/xml/bookstore.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

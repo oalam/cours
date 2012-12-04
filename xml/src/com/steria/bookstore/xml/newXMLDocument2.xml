@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument2.xml
+    Created on : June 26, 2012, 9:42 PM
+    Author     : tom
+    Description:
+        Purpose of the document follows.
+-->
+
+<ns1:Order  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xmlns:ns1='null'
+   xsi:schemaLocation='null file:/Users/tom/Documents/workspace/formation-cours/xml/src/xml/ressources/order.xsd'>
+    <creationdate></creationdate>
+    <id></id>
+    <customer>
+	<creditcard></creditcard>
+	<email></email>
+	<name></name>
+    </customer>
+    <status></status>
+    <orderedProducts>
+	<productcount></productcount>
+    </orderedProducts>
+    <orderedProducts>
+	<productcount></productcount>
+    </orderedProducts>
+    <orderedProducts>
+	<productcount></productcount>
+    </orderedProducts>
+
+</ns1:Order>

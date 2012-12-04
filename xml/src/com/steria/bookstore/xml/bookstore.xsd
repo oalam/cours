@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+    <xs:element name="bookstore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" >
+                    <xs:complexType mixed="true">
+                        <xs:attribute name="lang" type="xs:string" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="author" maxOccurs="unbounded"/>
+                <xs:element ref="editor"/>
+                <xs:element ref="price"/>
+                <xs:element ref="year"/>
+                <xs:element name="comments">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="userComment" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="category" type="xs:string" use="required" />
+            <xs:attribute name="ISBN" type="xs:string" use="required" />
+            <xs:attribute name="cover" type="xs:string" use="optional" />
+            <xs:attribute name="stocks" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="author" type="xs:string"/>
+    <xs:element name="editor" type="xs:string"/>
+    <xs:element name="price" type="xs:decimal"/>
+    <xs:element name="year" type="xs:integer"/>
+    <xs:element name="userComment">
+        <xs:complexType mixed="true">
+            <xs:attribute name="rating" default="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : newXMLDocument.xml
+    Created on : 1 août 2011, 12:19
+    Author     : Administrateur
+    Description:
+        Purpose of the document follows.
+-->
+
+<st:bookstore  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xmlns:st='http://www.steria.com'
+   xsi:schemaLocation='http://www.steria.com bookstore.xsd'>
+    <st:book category="" ISBN="" cover="">
+        <st:title lang=""></st:title>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:editor></st:editor>
+        <st:price></st:price>
+        <st:year></st:year>
+        <st:comments>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+        </st:comments>
+    </st:book>
+    <st:book category="" ISBN="" cover="">
+        <st:title lang=""></st:title>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:editor></st:editor>
+        <st:price></st:price>
+        <st:year></st:year>
+        <st:comments>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+        </st:comments>
+    </st:book>
+    <st:book category="" ISBN="" cover="">
+        <st:title lang=""></st:title>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:author></st:author>
+        <st:editor></st:editor>
+        <st:price></st:price>
+        <st:year></st:year>
+        <st:comments>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+            <st:userComment rating=""></st:userComment>
+        </st:comments>
+    </st:book>
+
+</st:bookstore>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- <!DOCTYPE bookstore SYSTEM "bookstore.dtd">-->    
+<?xml-stylesheet type="text/xsl" href="newstylesheet.xsl"?>
+<!-- Edited by XMLSpy® -->
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="bookstore.xsd">
+    <book ISBN="10-000000-001" category="history" stocks="123">
+        <title lang="en">The Iliad and The Odyssey</title>
+        <author>Homère</author>
+        <editor>vvb</editor>
+        <price>12.95</price>
+        <year>1680</year>
+        <comments>
+            <userComment rating="5" >Best translation I've read.</userComment> 
+            <userComment rating="2" >I like other versions better.</userComment>
+        </comments>
+    </book>
+    <book ISBN="10-000000-999" category="art" stocks="456">
+        <title lang="en">Anthology of World Literature</title>
+        <author>Mr X</author>
+        <editor></editor>
+        <price>24.95</price>
+        <year>2000</year>
+        <comments>
+            <userComment rating="3" >Needs more modern literature.</userComment>
+      
+            <userComment rating="4" >Excellent overview of world literature.</userComment>
+        
+        </comments>
+    </book>
+    <book ISBN="11-000000-002" category="computer" stocks="1">
+        <title lang="en">Computer Dictionary</title>
+        <author>Brad king</author>
+        <editor></editor>
+        <price>39.95</price>
+        <year>2010</year>
+        <comments>
+            <userComment rating="3" >A valuable resource.</userComment>
+        </comments>
+    </book>
+    <book ISBN="11-000000-003" category="cooking" stocks="0">
+        <title lang="en">Cooking on a Budget</title>
+        <author>emile Gusto</author>
+        <editor></editor>
+        <price>23.95</price>
+        <year>2006</year>
+        <comments>
+            <userComment rating="4" >Delicious!</userComment>
+        
+        </comments>
+    </book>
+    <book ISBN="11-000000-005" category="art" stocks="1000">
+        <title lang="en">Great Works of Art</title>
+        <author>Andy Warhol</author>
+        <editor></editor>
+        <price>29.95</price>
+        <year>2006</year>
+        <comments></comments>
+    </book>
+    <book ISBN="11-000000-006" category="cooking" stocks="13000">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <editor></editor>
+        <price>30.00</price>
+        <year>2005</year>
+        <comments></comments>
+    </book>
+    <book ISBN="11-000000-007" category="children" stocks="13">
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+        <editor></editor>
+        <price>29.99</price>
+        <year>2005</year>
+        <comments></comments>
+    </book>
+    <book ISBN="11-000000-008" category="web" stocks="10089">
+        <title lang="en">XQuery Kick Start</title>
+        <author>James McGovern</author>
+        <author>Per Bothner</author>
+        <author>Kurt Cagle</author>
+        <author>James Linn</author>
+        <author>Vaidyanathan Nagarajan</author>
+        <editor></editor>
+        <price>49.99</price>
+        <year>2003</year>
+        <comments></comments>
+    </book>
+    <book ISBN="11-000000-009" category="web" cover="paperback" stocks="123">
+        <title lang="en">Learning XML</title>
+        <author>Erik T. Ray</author>
+        <editor></editor>
+      
+        <price>39.95</price>
+        <year>2003</year>
+        <comments></comments>
+    </book>
+</bookstore>
